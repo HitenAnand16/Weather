@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+
+}
+
+/* Styles for the container */
+.container {
+    background-color: white;
+    /* Changed to white background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+    /* Set text color to dark */
+}
+
+/* Styles for the top bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    padding: 30px;
+    width: 350px;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.586) 0px 5px 15px;
+    /* Changed shadow color */
+    background: linear-gradient(135deg, #210057, #4a105f, #6b2468);
+}
+
+/* Styles for the city input */
+.cityInput {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: black;
+    height: 50px;
+    padding-left: 20px;
+    /* Add padding to the left */
+    background-color: #f8f9fa;
+    /* Optional: Change background color */
+    text-transform: capitalize;
+}
+
+.cityInput ::placeholder {
+    padding-left: 10px;
+}
+
+/* Styles for the search icon */
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.weather-image {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-temp {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    animation: changeFontSize 0.5s;
+    transform: translateZ(0);
+    /* or transform: translate3d(0, 0, 0); */
+}
+
+.weather-location {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.data-container {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.element {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
